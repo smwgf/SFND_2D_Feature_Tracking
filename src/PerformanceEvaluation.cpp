@@ -139,7 +139,8 @@ void RunDetectAndComputeCombination(string& detectorType , string& descriptorTyp
     int dataBufferSize = 2;       // no. of images which are held in memory (ring buffer) at the same time
     vector<DataFrame> dataBuffer; // list of data frames which are held in memory at the same time
     bool bVis = false;            // visualize results
-
+    double timeSum = 0.0f;
+    timeLog << "Combination detector : " << detectorType << " - descriptor : " << descriptorType << " time -> ,";
     /* MAIN LOOP OVER ALL IMAGES */
 
     for (size_t imgIndex = 0; imgIndex <= imgEndIndex - imgStartIndex; imgIndex++)
@@ -182,9 +183,8 @@ void RunDetectAndComputeCombination(string& detectorType , string& descriptorTyp
         
         double t = (double)cv::getTickCount();
         if (dataBuffer.size() > 1) 
-        {
-            timeLog << "Combination detector : " << detectorType << " - descriptor : " << descriptorType << " time -> ,";
-            matchLog << "Combination detector : " << detectorType << " - descriptor : " << descriptorType << " match count -> ,";
+        {            
+            matchLog << "Combination detector : " << detectorType << " - descriptor : " << descriptorType << " img(" << imgIndex <<"," << imgIndex+1 << ") "<<"match count -> ,";
         }
         
         if (detectorType.compare("SHITOMASI") == 0)
@@ -269,7 +269,7 @@ void RunDetectAndComputeCombination(string& detectorType , string& descriptorTyp
 
             //// EOF STUDENT ASSIGNMENT
             t = ((double)cv::getTickCount() - t) / cv::getTickFrequency();
-            timeLog << 1000 * t / 1.0 << " ms" << endl;
+            timeSum += t/9.0f;            
             matchLog << matches.size() << endl;
             // store matches in current data frame
             (dataBuffer.end() - 1)->kptMatches = matches;
@@ -296,7 +296,8 @@ void RunDetectAndComputeCombination(string& detectorType , string& descriptorTyp
             bVis = false;
         }        
 
-    } // eof loop over all images    
+    } // eof loop over all images
+    timeLog << 1000 * timeSum / 1.0 << " ms" << endl;
 }
 
 int main(int argc, const char *argv[])
