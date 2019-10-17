@@ -58,10 +58,15 @@ int main(int argc, const char *argv[])
 
         //// STUDENT ASSIGNMENT
         //// TASK MP.1 -> replace the following code with ring buffer of size dataBufferSize
-
+        if(dataBuffer.size()>=dataBufferSize)
+        {
+            std::cout << "DataFrame erase." << std::endl;
+            dataBuffer.erase(dataBuffer.begin());
+        }
         // push image into data frame buffer
         DataFrame frame;
         frame.cameraImg = imgGray;
+        std::cout << "DataFrame push." << std::endl;
         dataBuffer.push_back(frame);
 
         //// EOF STUDENT ASSIGNMENT
@@ -71,20 +76,26 @@ int main(int argc, const char *argv[])
 
         // extract 2D keypoints from current image
         vector<cv::KeyPoint> keypoints; // create empty feature list for current image
-        string detectorType = "SHITOMASI";
+        string detectorType = "SIFT"; //// -> HARRIS, FAST, BRISK, ORB, AKAZE, SIFT
 
         //// STUDENT ASSIGNMENT
         //// TASK MP.2 -> add the following keypoint detectors in file matching2D.cpp and enable string-based selection based on detectorType
-        //// -> HARRIS, FAST, BRISK, ORB, AKAZE, SIFT
+        
 
         if (detectorType.compare("SHITOMASI") == 0)
         {
             detKeypointsShiTomasi(keypoints, imgGray, false);
         }
+        else if (detectorType.compare("HARRIS") == 0)
+        {            
+            detKeypointsHarris(keypoints, imgGray, false);            
+        }
         else
         {
-            //...
+            detKeypointsModern(keypoints, imgGray,detectorType, false);            
         }
+
+                                        
         //// EOF STUDENT ASSIGNMENT
 
         //// STUDENT ASSIGNMENT
@@ -95,7 +106,7 @@ int main(int argc, const char *argv[])
         cv::Rect vehicleRect(535, 180, 180, 150);
         if (bFocusOnVehicle)
         {
-            // ...
+            filterKeypointRect(keypoints,vehicleRect);
         }
 
         //// EOF STUDENT ASSIGNMENT
@@ -177,7 +188,7 @@ int main(int argc, const char *argv[])
                 cv::waitKey(0); // wait for key to be pressed
             }
             bVis = false;
-        }
+        }        
 
     } // eof loop over all images
 
