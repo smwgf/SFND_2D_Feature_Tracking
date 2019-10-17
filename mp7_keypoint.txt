@@ -1,0 +1,80 @@
+image number 0
+SHITOMASI detection with n=1370 standard deviation of keypoint size : 0
+HARRIS detection with n=492 standard deviation of keypoint size : 0
+FAST detection with n=1824 standard deviation of keypoint size : 0
+BRISK detection with n=2757 standard deviation of keypoint size : 12.2054
+ORB detection with n=500 standard deviation of keypoint size : 23.3767
+AKAZE detection with n=1351 standard deviation of keypoint size : 3.19362
+SIFT detection with n=1438 standard deviation of keypoint size : 7.26722
+image number 1
+SHITOMASI detection with n=1301 standard deviation of keypoint size : 0
+HARRIS detection with n=502 standard deviation of keypoint size : 0
+FAST detection with n=1832 standard deviation of keypoint size : 0
+BRISK detection with n=2777 standard deviation of keypoint size : 12.5641
+ORB detection with n=500 standard deviation of keypoint size : 23.3767
+AKAZE detection with n=1327 standard deviation of keypoint size : 3.1086
+SIFT detection with n=1371 standard deviation of keypoint size : 7.18961
+image number 2
+SHITOMASI detection with n=1361 standard deviation of keypoint size : 0
+HARRIS detection with n=516 standard deviation of keypoint size : 0
+FAST detection with n=1810 standard deviation of keypoint size : 0
+BRISK detection with n=2741 standard deviation of keypoint size : 12.1875
+ORB detection with n=500 standard deviation of keypoint size : 23.3767
+AKAZE detection with n=1311 standard deviation of keypoint size : 3.13032
+SIFT detection with n=1380 standard deviation of keypoint size : 6.03602
+image number 3
+SHITOMASI detection with n=1358 standard deviation of keypoint size : 0
+HARRIS detection with n=524 standard deviation of keypoint size : 0
+FAST detection with n=1817 standard deviation of keypoint size : 0
+BRISK detection with n=2735 standard deviation of keypoint size : 12.053
+ORB detection with n=500 standard deviation of keypoint size : 23.3767
+AKAZE detection with n=1351 standard deviation of keypoint size : 3.04563
+SIFT detection with n=1335 standard deviation of keypoint size : 6.59707
+image number 4
+SHITOMASI detection with n=1333 standard deviation of keypoint size : 0
+HARRIS detection with n=523 standard deviation of keypoint size : 0
+FAST detection with n=1793 standard deviation of keypoint size : 0
+BRISK detection with n=2757 standard deviation of keypoint size : 12.2936
+ORB detection with n=500 standard deviation of keypoint size : 23.3767
+AKAZE detection with n=1360 standard deviation of keypoint size : 3.16703
+SIFT detection with n=1305 standard deviation of keypoint size : 7.13844
+image number 5
+SHITOMASI detection with n=1284 standard deviation of keypoint size : 0
+HARRIS detection with n=511 standard deviation of keypoint size : 0
+FAST detection with n=1796 standard deviation of keypoint size : 0
+BRISK detection with n=2695 standard deviation of keypoint size : 12.4962
+ORB detection with n=500 standard deviation of keypoint size : 23.3767
+AKAZE detection with n=1347 standard deviation of keypoint size : 3.14858
+SIFT detection with n=1370 standard deviation of keypoint size : 5.79093
+image number 6
+SHITOMASI detection with n=1322 standard deviation of keypoint size : 0
+HARRIS detection with n=505 standard deviation of keypoint size : 0
+FAST detection with n=1788 standard deviation of keypoint size : 0
+BRISK detection with n=2715 standard deviation of keypoint size : 12.3054
+ORB detection with n=500 standard deviation of keypoint size : 23.3767
+AKAZE detection with n=1363 standard deviation of keypoint size : 3.2467
+SIFT detection with n=1396 standard deviation of keypoint size : 6.62167
+image number 7
+SHITOMASI detection with n=1366 standard deviation of keypoint size : 0
+HARRIS detection with n=510 standard deviation of keypoint size : 0
+FAST detection with n=1695 standard deviation of keypoint size : 0
+BRISK detection with n=2628 standard deviation of keypoint size : 12.5017
+ORB detection with n=500 standard deviation of keypoint size : 23.3767
+AKAZE detection with n=1331 standard deviation of keypoint size : 3.21329
+SIFT detection with n=1382 standard deviation of keypoint size : 6.67792
+image number 8
+SHITOMASI detection with n=1389 standard deviation of keypoint size : 0
+HARRIS detection with n=529 standard deviation of keypoint size : 0
+FAST detection with n=1749 standard deviation of keypoint size : 0
+BRISK detection with n=2639 standard deviation of keypoint size : 12.4853
+ORB detection with n=500 standard deviation of keypoint size : 23.3767
+AKAZE detection with n=1357 standard deviation of keypoint size : 3.11631
+SIFT detection with n=1463 standard deviation of keypoint size : 6.35039
+image number 9
+SHITOMASI detection with n=1339 standard deviation of keypoint size : 0
+HARRIS detection with n=520 standard deviation of keypoint size : 0
+FAST detection with n=1770 standard deviation of keypoint size : 0
+BRISK detection with n=2672 standard deviation of keypoint size : 12.1199
+ORB detection with n=500 standard deviation of keypoint size : 23.3767
+AKAZE detection with n=1331 standard deviation of keypoint size : 3.11715
+SIFT detection with n=1422 standard deviation of keypoint size : 6.2793

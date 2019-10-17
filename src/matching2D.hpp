@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <iostream>
+#include <fstream>
 #include <sstream>
 #include <iomanip>
 #include <vector>
@@ -27,4 +28,5 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
                       std::vector<cv::DMatch> &matches, std::string descriptorType, std::string matcherType, std::string selectorType);
 void filterKeypointRect(std::vector<cv::KeyPoint> &keypoints,cv::Rect &filtRect);
 
+extern std::ofstream logfile;
 #endif /* matching2D_hpp */
